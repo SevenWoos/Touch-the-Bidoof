@@ -1,1 +1,3 @@
-theme: jekyll-theme-architect
+name: Sockcave
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
