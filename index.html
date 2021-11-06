@@ -1,30 +1,26 @@
-<!-- Touch the Bidoof-->
-
-<!DOCTYPE html>
 <html>
     <head>
         <title>TOUCH THE BIDOOF</title>
         <link rel="stylesheet" href="bidoof_style.css">
     </head>
+    <body>
+        <h1> Bidoofs Caught</h1>
+        <!-- Default count value is 0 -->
+        <h2 id="count-bidoof">0</h2>
+        <h3><i>Highest Record was 10001</i></h3>
 
-    <h1>Times Bidoof Was Touched:</h1>
-    <h2 id="count-el">0</h2>
-    <h3><i>Highest Record was 10001</i></h3>
+        <!-- Creating an save button -->
+        <button id="save_test_btn" onclick="saveRecords()"> Save</button>
 
-
-    <body style="background-color:lightblue;">
-        <h1>Touch the Bidoof, seriously...</h1>
-
-        <div id="bidoof_box">
-            <!-- <img src="https://i.redd.it/l5gwe3i7vwa51.jpg" width = "400" height ="300" border="5"> -->
-            <img src="https://cdn2.bulbagarden.net/upload/thumb/f/f5/399Bidoof.png/1200px-399Bidoof.png" width = 390 height = 440 class="center">
-            <script src="./bidoof_script.js"></script>
-    </div>
-
-        <!-- <button id="save-btn" onclick="save()">SAVE</button>
+        <!-- Previous Records of Bidoof -->
         <p id="save-el">Previous Records: </p>
 
-        <input type="button" value="PLAY" onclick="play()">
-        <audio id="audio" src="https://www.youtube.com/watch?v=FsHwp054mSc"></audio> -->
+        <!-- <img src="image.png" onclick="playAudio('mysound.mp3')"> -->
+
+        <div id="bidoof_box">
+            <img src="https://cdn2.bulbagarden.net/upload/thumb/f/f5/399Bidoof.png/1200px-399Bidoof.png" width = 390 height = 440 class="center">
+    </div>
+
+        <script src="bidoof_script.js"></script>
     </body>
 </html>

@@ -1,33 +1,37 @@
-console.log("BIDOOF WAS HERE");
-
 let count = 0
-let countEl = document.getElementById("count-el")
+let countBidoof = document.getElementById("count-bidoof")
 
-let saveEL = document.getElementById("save-el")
+let saveBidoof = document.getElementById("save-el")
 
-function play() {
-    var audio = document.getElementById("audio");
-    audio.play();
-  }
+function incrementBidoof() {
+    count+=1
+    // Update the count on app
+    countBidoof.textContent = count
+}
 
 function touch(){
     // alert('You touched the Bidoof!');
-    console.log("Button was clicked")
-    count = count+1
-    countEl.textContent = count
-    console.log(count)
+    count+=+1
+    // Update the count on app
+    countBidoof.textContent = count
 }
 
-function save() {
-    let saveElText = count + " - "
-    saveEL.textContent += saveElText
+function saveRecords() {
+    let saveBidoofText = count + " - "
+    
+    saveBidoof.textContent += saveBidoofText
 
-    console.log(count)
-
-    //Reset count to 0
-    countEl.textContent = 0
+    // Reset Records
+    countBidoof.textContent = 0
     count = 0
 }
 
+//Play audio when Bidoof is clicked.
+function playAudio(url) {
+    new Audio(url).play();
+  }
+
 // Creating an Event Listener when you touch Bidoof
-document.getElementById('bidoof_box').addEventListener('click', touch, save, play)
+document.getElementById('bidoof_box').addEventListener('click', touch, playAudio('BidoofCry.mp3'))
+
+console.log("Touch the Bidoof.")
