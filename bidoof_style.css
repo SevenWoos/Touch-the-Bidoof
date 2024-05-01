@@ -1,5 +1,6 @@
 body {
-    background-image: url("https://i.redd.it/70dmmfn3ohi71.jpg");
+    /* background-image: url("https://i.redd.it/70dmmfn3ohi71.jpg"); */
+    background-image: linear-gradient(to bottom right, #ed5454, #ee5f54, #e2ad63d8, #f4c426, #f2ff00, #f4c426, #e2ad63d8, #ee5f54, #ed5454);
     background-size: cover;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
@@ -9,6 +10,12 @@ body {
 h1 {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.header {
+    font-family: 'Raleway', "Trebuchet MS", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 h2 {
@@ -28,6 +35,10 @@ button {
     border-radius: 5px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 #increment_test_btn {
     background: red;
     /* background: url("https://cdn2.bulbagarden.net/upload/thumb/f/f5/399Bidoof.png/1200px-399Bidoof.png"); */
@@ -39,5 +50,5 @@ p {
 }
 
 #save_test_btn {
-    background: darkgreen;
+    background: rgb(11, 143, 11);
 }
